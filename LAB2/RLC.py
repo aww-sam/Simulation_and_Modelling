@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-R=20
-L=1
-C=0.01
-v0=10
+R=float(input("Enter the value of resistance: "))
+L=float(input("Enter the value of inductance: "))
+C=float(input("Enter the value of capacitance: "))
+v0=float(input("Enter the value of initial capacitor voltage: "))
 alpha=R/(2*L)
 w0=1/((L*C)**0.5)
 
