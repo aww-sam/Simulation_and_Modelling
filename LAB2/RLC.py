@@ -23,7 +23,7 @@ else:
     print("underdamped")
     Wd=(w0**2-alpha**2)**0.5
     sin_term=np.sin(Wd*t)
-    cos_term=np.cos(wd*t)
+    cos_term=np.cos(Wd*t)
     i=(v0/(L*Wd))*(np.exp(-alpha*t))*sin_term
     v=v0*np.exp(-alpha*t)*(cos_term+((alpha/Wd)*sin_term))
 
