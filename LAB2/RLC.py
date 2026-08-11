@@ -1,14 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-R=float(input("Enter the value of resistance: "))
-L=float(input("Enter the value of inductance: "))
-C=float(input("Enter the value of capacitance: "))
-v0=float(input("Enter the value of initial capacitor voltage: "))
+R=float(input("Enter the value of resistance : "))
+L=float(input("Enter the value of inductance : "))
+C=float(input("Enter the value of capacitance : "))
+v0=float(input("Enter the value of initial capacitor voltage : "))
 alpha=R/(2*L)
 w0=1/((L*C)**0.5)
 
-t=np.linspace(0,10,100000)
+t=np.linspace(0,10,1000000)
 if alpha>w0:
     print("overdamped")
     s1=-alpha+np.sqrt(alpha**2-w0**2)
