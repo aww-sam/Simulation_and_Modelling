@@ -52,6 +52,7 @@ solution=solve_ivp(
 
 
 ### below is chatgpt code for animation
+## just for real life feel added pendulam
 
 from matplotlib.animation import FuncAnimation
 
